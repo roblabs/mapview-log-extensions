@@ -1,5 +1,5 @@
 // swift-tools-version:5.2
-/// For Xcode 13, use swift-tools-version:5.5
+/// For Xcode 13, use `swift-tools-version:5.5`
 /// The `swift-tools-version` declares the minimum version of Swift required to build this `package`.
 /// Copyright ePi Rational, Inc. or its affiliates. All Rights Reserved.
 /// SPDX-License-Identifier: MIT

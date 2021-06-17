@@ -6,11 +6,11 @@ import os.signpost
 
 @available(iOS 12.0, *)
 extension OSLog {
-    public static var subsystem = "com.roblabs.log-mapview"
-    public static var category = "OSLog.MapView"
+    public static var subsystemMapview = "com.roblabs.log-mapview"
+    public static var categoryMapview = "OSLog.MapView"
     public static var name: StaticString = "Log MapView"
 
-    private static var oslog = OSLog(subsystem: subsystem, category: category)
+    private static var oslog = OSLog(subsystem: subsystemMapview, category: categoryMapview)
 
     public enum mapEvents: String, CustomStringConvertible {
         public var description: String {
@@ -79,7 +79,7 @@ extension OSLog {
         #if DEBUG
         // Log to Xcode
         if(type == .event) {
-            NSLog("[\(OSLog.subsystem)] \(message), \(function), line: \(line)")
+            NSLog("[\(OSLog.subsystemMapview)] \(message), \(function), line: \(line)")
         }
         #endif
 
