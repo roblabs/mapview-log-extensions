@@ -16,9 +16,15 @@ extension OSLog {
         public var description: String {
             return self.rawValue
         }
+        
+        /// Convenience string for the event:  initializing the MapViewDelegate
+        case initDelegate = "🎬 init MapViewDelegate"
 
         /// Convenience string for the event:  map view is about to start rendering some of its tiles.
         case WillStartRenderingMap = "🦮1. WillStartRenderingMap"
+        
+        /// Convenience string for the event:  map view will begin to load.
+        case WillStartLoadingMap   = "🦮10. WillStartLoadingMap"
         
         /// Convenience string for the event:  map has just finished loading a style.
         case DidFinishLoadingStyle = "🦮2. DidFinishLoadingStyle"
@@ -36,10 +42,13 @@ extension OSLog {
         case WillStartRenderingMap_to_DidBecomeIdle = "🦮11. WillStartRendering has finished, now set timer to DidBecomeIdle"
         
         /// Convenience string for the event:  viewpoint depicted by the map view is changing.
-        case RegionIsChanging      = "🦮100. RegionIsChanging"
-        
-        /// Convenience string for the event:  map view will begin to load.
-        case WillStartLoadingMap   = "🦮100. WillStartLoadingMap"
+        case RegionIsChanging        = "🦮100. RegionIsChanging"
+
+        /// Convenience string for the event:  the region displayed by the map view just changed.
+        case regionDidChangeAnimated = "🦮100. regionDidChangeAnimated"
+
+        /// Convenience string for the event:  the map view's visible region changed.
+        case DidChangeVisibleRegion  = "🦮100. DidChangeVisibleRegion"
     }
 
     /// A convenience values for signpost intervals that will never occur concurrently.
