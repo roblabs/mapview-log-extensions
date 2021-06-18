@@ -44,6 +44,9 @@ extension OSLog {
         /// Convenience string for the event:  viewpoint depicted by the map view is changing.
         case RegionIsChanging        = "🦮100. RegionIsChanging"
 
+        /// Convenience string for the event:  the region displayed by the map view is about to change.
+        case regionWillChangeAnimated = "🦮100. regionWillChangeAnimated"
+
         /// Convenience string for the event:  the region displayed by the map view just changed.
         case regionDidChangeAnimated = "🦮100. regionDidChangeAnimated"
 
