@@ -7,6 +7,7 @@ import PackageDescription
 
 let package = Package(
     name: "MapView OSLog Extensions",
+    platforms: [.tvOS(.v13)],
     products: [
         /// `products` define the executables and libraries produced by a `package`, and make them visible to other packages.
         .library(
